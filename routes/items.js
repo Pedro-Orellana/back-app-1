@@ -19,7 +19,7 @@ router.get('/', function (req, res, next) {
 
     router.post('/', (req, res) => {
         var item = new Item({
-            itemText: "Hello testing"
+            itemText: req.body.text
         })
 
 
